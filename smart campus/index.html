@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Campus Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <div class="logo">
+            🎓 SmartCampus
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Your Campus.
+                <span>Your Assistant.</span>
+            </h1>
+
+            <p>
+                Find classrooms, events, faculty, timetables
+                and everything you need on campus.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask something about your campus..."
+                >
+
+                <button onclick="askAssistant()">
+                    Ask AI 🤖
+                </button>
+
+            </div>
+
+            <div id="answer"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features">
+
+        <h2>Everything You Need</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🗺️</div>
+                <h3>Campus Map</h3>
+                <p>
+                    Find classrooms, labs and important
+                    locations easily.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Events</h3>
+                <p>
+                    Discover upcoming workshops,
+                    hackathons and college events.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Timetable</h3>
+                <p>
+                    Check your daily classes and
+                    schedules.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Faculty</h3>
+                <p>
+                    Quickly find faculty and
+                    department information.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Events -->
+
+    <section id="events" class="events">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+
+            <h3>🚀 PARADOX Hackathon</h3>
+
+            <p>
+                Build innovative solutions and
+                compete with other students.
+            </p>
+
+            <button>View Event</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+        <h3>SmartCampus 🎓</h3>
+
+        <p>
+            Making campus life easier with technology.
+        </p>
+
+    </footer>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
