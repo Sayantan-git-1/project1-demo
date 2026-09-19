@@ -43,6 +43,11 @@ function askAssistant() {
         answer.innerHTML =
             "🤖 I don't have that information yet. Try asking about the library, CSE lab, cafeteria or events.";
 
-    }
+ 
+        }
+        document.addEventListener('mousemove', (e) => {
+  document.body.style.setProperty('--mx', e.clientX + 'px');
+  document.body.style.setProperty('--my', e.clientY + 'px');
+});
 
 }

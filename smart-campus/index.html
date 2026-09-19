@@ -8,6 +8,7 @@
     <title>Smart Campus Assistant</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
 </head>
 
 <body>
@@ -56,6 +57,9 @@
 
                 <button onclick="askAssistant()">
                     Ask AI 🤖
+                </button>
+                <button onclick="window.location.href='login.html'">
+                Login
                 </button>
 
             </div>
@@ -154,6 +158,44 @@
     </footer>
     <script type="module" src="firebase.js"></script>
     <script type="module" src="script.js"></script>
+    <!-- AI CHATBOT -->
+
+<button id="chatbot-btn">🤖</button>
+
+<div id="chatbot">
+
+    <div class="chat-header">
+        Smart Campus AI Assistant
+
+        <span id="close-chat">×</span>
+    </div>
+
+    <div id="chat-messages">
+
+        <div class="bot-message">
+            Hello! 👋 I'm your Smart Campus AI Assistant.
+            How can I help you?
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Ask me anything..."
+        >
+
+        <button id="send-btn">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="chatbot.js"></script>
 
 </body>
 
